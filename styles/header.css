@@ -94,13 +94,19 @@
   .opcoes__botao{
     display: none;
   }
-  .opcoes__botao:checked ~ .categorias_id{
-    background: var(--azul-degrade);
-  }
   .opcoes__botao:checked ~ .categorias_id > .opcoes__item{
     color: var(--branco-principal);
+    background: var(--azul-degrade);
+    
   }
-
+  .lista-menu__item:hover{
+    background: var(--azul-degrade);
+  }
+  .lista-menu__item:hover > .lista-menu__link{
+    -webkit-text-fill-color:var(--branco-principal);
+      
+  }
+  
 }
 @media screen and (min-width: 1728px){
   .container__texto{
